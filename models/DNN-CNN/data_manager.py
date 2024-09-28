@@ -39,7 +39,7 @@ class DataManager():
             axis=1
         )
         x_data = x_data.to_numpy()
-        x_data = x_data.reshape(-1, 28, 28)
+        x_data = x_data.reshape(-1, 28, 28, 1)
         x_data = x_data/256.0
         x_data = x_data.astype("float32")
         return [x_data, y_data]
