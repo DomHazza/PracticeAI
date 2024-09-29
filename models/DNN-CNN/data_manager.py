@@ -3,7 +3,7 @@ import pandas as pd
 
 
 class DataManager():
-    def __init__(self, split_ratio = [0.7, 0.15, 0.15]):
+    def __init__(self, split_ratio = [0.8, 0.1, 0.1]):
         x_data, y_data = self.__get_data()
         x_train, x_valid, x_test = self.__split_data(
             split_ratio, x_data

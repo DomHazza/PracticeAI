@@ -1,6 +1,7 @@
 # Notes
 **.docx
 mlruns/
+mlartifacts/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
