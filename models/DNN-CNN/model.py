@@ -6,7 +6,7 @@ import numpy as np
 
 
 class DeepModel(tf.keras.Model):
-    def __init__(self, img_height=28, img_width=28, batch_size=100):
+    def __init__(self, img_height=28, img_width=28):
         super().__init__()
         # self.i1 = tf.keras.layers.Input(shape=(img_height, img_width), batch_size=batch_size)
         self.flatten = tf.keras.layers.Flatten()
@@ -25,7 +25,7 @@ class DeepModel(tf.keras.Model):
 
 
 class ConvModel(tf.keras.Model):
-    def __init__(self, img_height=28, img_width=28, batch_size=100):
+    def __init__(self, img_height=28, img_width=28):
         super().__init__()
         # self.i1 = tf.keras.layers.Input(shape=(img_height, img_width), batch_size=batch_size)
         self.c1 = tf.keras.layers.Conv2D(26, 3, activation='relu')
